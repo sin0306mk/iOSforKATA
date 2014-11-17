@@ -9,16 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var myLabel: UILabel!
     override func viewDidLoad() {
-        //FIXME:ロード部分
+        //FIXME:最初に画面が表示された時にする処理
         super.viewDidLoad()
+        myLabel.text = "起動画面です"
         //TODO:色が白くなります
         //UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: false)
     }
     override func didReceiveMemoryWarning() {
-        //FIXME:didReceiveMemoryWarning
-        //TODO:初期状態
-        //MARK:
+        //MARK:メモリーエラーが出た時にする処理
         super.didReceiveMemoryWarning()
     }
 }
