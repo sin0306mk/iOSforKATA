@@ -407,6 +407,7 @@
 				CEBEADC91A16EBE8008CE349 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEBEADCA1A16EBE8008CE349 /* Build configuration list for PBXNativeTarget "iOSforSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +416,7 @@
 				CEBEADCC1A16EBE8008CE349 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
