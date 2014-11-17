@@ -24,6 +24,16 @@ class ViewController: UIViewController {
         //TODO:色が白くなります
         //UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: false)
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        for fontFamilyName in UIFont.familyNames() {
+            println("フォントファミリー名=\(fontFamilyName)")
+            for fontName in UIFont.fontNamesForFamilyName(fontFamilyName as String){
+                println(" >> \(fontName)")
+            }
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         //MARK:メモリーエラーが出た時にする処理
         super.didReceiveMemoryWarning()
