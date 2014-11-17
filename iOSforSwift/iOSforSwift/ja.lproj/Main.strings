@@ -1,0 +1,15 @@
+
+/* Class = "IBUILabel"; text = "こんにちは"; ObjectID = "HUP-5b-Fj6"; */
+"HUP-5b-Fj6.text" = "こんにちは";
+
+/* Class = "IBUISegmentedControl"; OZi-hc-zdv.segmentTitles[0] = "左"; ObjectID = "OZi-hc-zdv"; */
+"OZi-hc-zdv.segmentTitles[0]" = "左";
+
+/* Class = "IBUISegmentedControl"; OZi-hc-zdv.segmentTitles[1] = "右"; ObjectID = "OZi-hc-zdv"; */
+"OZi-hc-zdv.segmentTitles[1]" = "右";
+
+/* Class = "IBUITextField"; placeholder = "文字を入力してください"; ObjectID = "R4K-X5-aTv"; */
+"R4K-X5-aTv.placeholder" = "文字を入力してください";
+
+/* Class = "IBUIButton"; normalTitle = "ボタン"; ObjectID = "cpl-Kq-W5u"; */
+"cpl-Kq-W5u.normalTitle" = "ボタン";

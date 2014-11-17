@@ -10,10 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var myLabel: UILabel!
+    @IBOutlet weak var myTxt: UITextField!
+    @IBOutlet weak var mySwitch: UISwitch!
+    @IBOutlet weak var mySlider: UISlider!
     override func viewDidLoad() {
         //FIXME:最初に画面が表示された時にする処理
         super.viewDidLoad()
-        myLabel.text = "起動画面です"
+        myLabel.text = "起動しました"
         myLabel.textAlignment = NSTextAlignment.Center
         myLabel.textColor = UIColor.redColor()
 //        myLabel.backgroundColor = UIColor.cyanColor()
@@ -34,9 +37,31 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func tapReturnKey(sender: AnyObject) {
+    }
     override func didReceiveMemoryWarning() {
         //MARK:メモリーエラーが出た時にする処理
         super.didReceiveMemoryWarning()
+    }
+    
+    @IBAction func changeSlider(sender: UISlider) {
+            myLabel.text = "スライダー値:\(sender.value)"
+    }
+    
+    @IBAction func tapBtn(sender: AnyObject) {
+        if (myLabel.text == "押されました"){
+            myLabel.text = "こんにちは"
+        }else{
+            myLabel.text = "押されました"
+        }
+    }
+    
+    @IBAction func changeSwitch(sender: UISwitch) {
+        if sender.on == true {
+            myTxt.text = "うちゅーう、きた〜！！！"
+        }else{
+            myTxt.text = ""
+        }
     }
 }
 
