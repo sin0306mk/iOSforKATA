@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var myTxt: UITextField!
     @IBOutlet weak var mySwitch: UISwitch!
     @IBOutlet weak var mySlider: UISlider!
+    @IBOutlet weak var mylongTxt: UITextView!
+    
     override func viewDidLoad() {
         //FIXME:最初に画面が表示された時にする処理
         super.viewDidLoad()
@@ -35,6 +37,11 @@ class ViewController: UIViewController {
                 println(" >> \(fontName)")
             }
         }
+    }
+    
+    @IBAction func taplongBtn(sender: AnyObject) {
+        mylongTxt.resignFirstResponder()
+        println(mylongTxt.text)
     }
     
     @IBAction func tapReturnKey(sender: AnyObject) {
